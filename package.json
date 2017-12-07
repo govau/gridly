@@ -1,0 +1,49 @@
+{
+	"name": "gridly",
+	"private": true,
+	"version": "1.0.0",
+	"description": "A GOV.AU UI-Kit grid bookmarklet.",
+	"keywords": [
+		"uikit",
+		"gov.au",
+		"Commonwealth of Australia",
+		"design guide",
+		"design system",
+		"bookmarklet",
+		"grid",
+		"JavaScript"
+	],
+	"scripts": {
+		"prepublish": "npm run build",
+		"build": "bookmarkletify src/index.js -o dist/index.js",
+		"watch": "onchange 'src/*.js' -- npm run build"
+	},
+	"dependencies": {},
+	"peerDependencies": {},
+	"devDependencies": {
+		"bookmarkletify": "^1.0.0",
+		"onchange": "^3.2.1",
+		"replace": "^0.3.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/govau/gridly.git"
+	},
+	"bugs": {
+		"url": "https://github.com/govau/gridly/issues",
+		"email": "guides@digital.gov.au"
+	},
+	"author": {
+		"name": "Commonwealth of Australia, DTA",
+		"email": "guides@digital.gov.au",
+		"url": "https://www.dta.gov.au/"
+	},
+	"contributors": [
+		{
+			"name": "Dominik Wilkowski",
+			"email": "hi@dominik-wilkowski.com",
+			"url": "https://dominik-wilkowski.com/"
+		}
+	],
+	"license": "MIT"
+}
