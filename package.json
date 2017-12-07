@@ -14,14 +14,13 @@
 		"JavaScript"
 	],
 	"scripts": {
-		"prepublish": "npm run build",
-		"build": "bookmarkletify src/index.js -o dist/index.js",
+		"build": "node script/build.js",
 		"watch": "onchange 'src/*.js' -- npm run build"
 	},
 	"dependencies": {},
 	"peerDependencies": {},
 	"devDependencies": {
-		"bookmarkletify": "^1.0.0",
+		"bookmarklet": "0.0.6",
 		"onchange": "^3.2.1"
 	},
 	"repository": {

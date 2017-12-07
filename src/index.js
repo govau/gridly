@@ -25,6 +25,8 @@ else {
 	overlay.style.right = '0';
 	overlay.style.left = '0';
 	overlay.style.height = height + 'px';
+	overlay.style.minHeight = '100vh';
+	overlay.style.zIndex = '99999999999';
 
 	document.body.appendChild( overlay )
 }
