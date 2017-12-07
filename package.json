@@ -22,8 +22,7 @@
 	"peerDependencies": {},
 	"devDependencies": {
 		"bookmarkletify": "^1.0.0",
-		"onchange": "^3.2.1",
-		"replace": "^0.3.0"
+		"onchange": "^3.2.1"
 	},
 	"repository": {
 		"type": "git",
